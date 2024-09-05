@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!-- Agrega tus estilos CSS aquí -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Dashboard</h1>
+    </header>
+
+    <!-- Barra Lateral -->
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/users">Usuarios</a></li>
+                <li><a href="/settings">Configuración</a></li>
+                <!-- Agrega más enlaces aquí -->
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main>
+        <%- body %> <!-- Contenido dinámico que cambiará -->
+    </main>
+
+    <!-- Scripts JS -->
+    <script src="/app.js"></script>
+</body>
+</html>
